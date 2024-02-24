@@ -1,0 +1,32 @@
+@use "sass:math";
+
+//============================================
+//縦横比率を管理する
+//============================================
+
+@function vw($window_width, $size) {
+    @return math.div($size, $window_width) * 100vw;
+}
+//============================================
+//pxをremに変換する
+//============================================
+// remへの計算式（16pxを基準としている。10pxを基準とする場合は16を10に変更する）
+@function rem($pixels) {
+    @return math.div($pixels, 16) * 1rem;
+}
+
+//============================================
+//ブレイクポイントの設定
+//============================================
+$breakpoint: (
+    sm: "screen and (max-width:521px)",
+    md: "screen and (max-width:821px)",
+    lg: "screen and (max-width:1024px)",
+    xl: "screen and (max-width:1440px)",
+);
+
+@mixin mq($bp) {
+    @media #{map-get($breakpoint,$bp)} {
+        @content;
+    }
+}

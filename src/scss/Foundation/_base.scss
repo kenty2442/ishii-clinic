@@ -1,0 +1,35 @@
+@use "Setting" as *;
+
+html {
+    font-family: "Noto Sans JP", sans-serif;
+    scroll-behavior: smooth;
+    font-size: 16px;
+
+    //スマホ
+    @include mq(md) {
+        font-size: 16px;
+    }
+
+    //~375px以下
+    @include mq(sm) {
+        font-size: calc((16 / 375) * 100vw);
+    }
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.pc-br {
+    @include mq(md) {
+        display: none;
+    }
+}
+
+.sp-br {
+    display: none;
+    @include mq(md) {
+        display: block;
+    }
+}

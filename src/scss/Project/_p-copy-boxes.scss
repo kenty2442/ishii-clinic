@@ -1,0 +1,50 @@
+@use "Setting" as *;
+
+.p-copy-boxes {
+    position: absolute;
+    margin-top: rem(133);
+    margin-left: rem(211);
+    display: flex;
+    flex-direction: row-reverse;
+    gap: rem(80);
+
+    @include mq(md) {
+        margin-left: 8%;
+        gap: rem(20);
+    }
+
+    @include mq(sm) {
+        margin-top: rem(60);
+    }
+}
+
+.p-copy-boxes__item {
+    width: rem(102);
+    height: rem(565);
+    background-color: #fff;
+    padding: rem(24) 0;
+
+    @include mq(sm) {
+        width: rem(50);
+        height: auto;
+    }
+}
+
+.p-copy-boxes__item-text {
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl;
+    font-size: rem(28);
+    font-weight: bold;
+    color: #444;
+    letter-spacing: 0.2em;
+    margin: 0 auto;
+
+    @include mq(sm) {
+        font-size: rem(20);
+    }
+
+    .text-accent-color {
+        font-weight: bold;
+        color: $text-color;
+    }
+}

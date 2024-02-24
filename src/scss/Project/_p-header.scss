@@ -1,0 +1,13 @@
+@use "Setting" as *;
+
+.p-header {
+    display: flex;
+    justify-content: space-between;
+    padding: rem(29);
+    max-width: rem(1100);
+    margin-inline: auto;
+}
+
+.p-header__logo {
+    width: rem(263);
+}

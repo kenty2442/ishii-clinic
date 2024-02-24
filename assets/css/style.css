@@ -1,0 +1,353 @@
+html {
+  font-family: "Noto Sans JP", sans-serif;
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.sp-br {
+  display: none;
+}
+
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  font-weight: normal;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+nav,
+ul,
+li {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+a:visited {
+  color: inherti;
+}
+
+address {
+  font-style: normal;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input,
+select {
+  vertical-align: middle;
+}
+
+
+.p-copy-boxes {
+  position: absolute;
+  margin-top: 133px;
+  margin-top: 8.3125rem;
+  margin-left: 211px;
+  margin-left: 13.1875rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  gap: 80px;
+  gap: 5rem;
+}
+
+.p-copy-boxes__item {
+  width: 102px;
+  width: 6.375rem;
+  height: 565px;
+  height: 35.3125rem;
+  background-color: #fff;
+  padding: 24px 0;
+  padding: 1.5rem 0;
+}
+
+.p-copy-boxes__item-text {
+  -ms-writing-mode: tb-rl;
+  -webkit-writing-mode: vertical-rl;
+          writing-mode: vertical-rl;
+  font-size: 28px;
+  font-size: 1.75rem;
+  font-weight: bold;
+  color: #444;
+  letter-spacing: 0.2em;
+  margin: 0 auto;
+}
+.p-copy-boxes__item-text .text-accent-color {
+  font-weight: bold;
+  color: #21a937;
+}
+
+.p-fv {
+  height: 947px;
+  height: 59.1875rem;
+  background-image: url("/assets/img/fv.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.p-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 29px;
+  padding: 1.8125rem;
+  max-width: 1100px;
+  max-width: 68.75rem;
+  margin-inline: auto;
+}
+
+.p-header__logo {
+  width: 263px;
+  width: 16.4375rem;
+}
+
+.p-pc-nav__tel-wraper {
+  text-align: right;
+  margin-top: 10px;
+  margin-top: 0.625rem;
+}
+
+.p-pc-nav__info {
+  font-size: 14px;
+  font-size: 0.875rem;
+}
+
+.p-pc-nav__tel {
+  position: relative;
+  font-size: 24px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #21a937;
+}
+
+.p-pc-nav__tel::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  top: 0.3125rem;
+  left: -30px;
+  left: -1.875rem;
+  display: block;
+  background-image: url("/assets/img/telphone.svg");
+  background-size: cver;
+  height: 24px;
+  height: 1.5rem;
+  width: 24px;
+  width: 1.5rem;
+}
+
+@media screen and (max-width:821px) {
+  html {
+    font-size: 16px;
+  }
+  .pc-br {
+    display: none;
+  }
+  .sp-br {
+    display: block;
+  }
+  .p-copy-boxes {
+    margin-left: 8%;
+    gap: 1.25rem;
+  }
+  .p-fv {
+    background-position: 70%;
+  }
+}
+
+@media screen and (max-width:521px) {
+  html {
+    font-size: 4.2666666667vw;
+  }
+  .p-copy-boxes {
+    margin-top: 3.75rem;
+  }
+  .p-copy-boxes__item {
+    width: 3.125rem;
+    height: auto;
+  }
+  .p-copy-boxes__item-text {
+    font-size: 1.25rem;
+  }
+  .p-fv {
+    height: 37.5rem;
+  }
+}
+/*# sourceMappingURL=maps/style.css.map */

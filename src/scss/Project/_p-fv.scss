@@ -1,0 +1,17 @@
+@use "Setting" as *;
+
+.p-fv {
+    height: rem(947);
+    background-image: url("/assets/img/fv.png");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+    @include mq(md) {
+        background-position: 70%;
+    }
+
+    @include mq(sm) {
+        height: rem(600);
+    }
+}
