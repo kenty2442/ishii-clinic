@@ -5,7 +5,6 @@ const sass = require("gulp-sass")(require("sass"));
 const plumber = require("gulp-plumber"); // エラーが発生しても強制終了させない
 const notify = require("gulp-notify"); // エラー発生時のアラート出力
 const postcss = require("gulp-postcss"); // PostCSS利用
-const cssnext = require("postcss-cssnext"); // CSSNext利用
 const cleanCSS = require("gulp-clean-css"); // 圧縮
 const rename = require("gulp-rename"); // ファイル名変更
 const sourcemaps = require("gulp-sourcemaps"); // ソースマップ作成
@@ -62,7 +61,6 @@ const cssSass = (done) => {
         .pipe(sassGlob())
         .pipe(sass({outputStyle: "expanded"}))
         .pipe(postcss([mqpacker()])) // メディアクエリを圧縮
-        .pipe(postcss([cssnext(browsers)])) //cssnext
         .pipe(sourcemaps.write("/maps")) //ソースマップの出力
         .pipe(dest(destPath.css)) //コンパイル先
         .pipe(cleanCSS()) // CSS圧縮

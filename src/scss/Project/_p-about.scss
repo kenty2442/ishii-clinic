@@ -1,0 +1,16 @@
+@use "Setting" as *;
+
+.p-about__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.p-about__content {
+    margin-left: rem(31);
+    margin-top: rem(30);
+}
+
+.p-about__text {
+    margin-top: rem(37);
+    line-height: 2.375em;
+}

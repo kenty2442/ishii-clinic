@@ -1,0 +1,20 @@
+@use "Setting" as *;
+
+.c-section-title {
+    font-size: rem(24);
+    text-align: center;
+}
+
+.c-section-title__left {
+    text-align: left;
+}
+
+.c-section-title span {
+    font-weight: bold;
+    background: linear-gradient(transparent 70%, #99e5a5 70%);
+}
+
+.c-section-title span:last-child {
+    margin-top: 31px;
+    display: inline-block;
+}
