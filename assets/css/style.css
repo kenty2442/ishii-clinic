@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   font-family: "Noto Sans JP", sans-serif;
   scroll-behavior: smooth;
@@ -216,6 +217,17 @@ select {
   margin: 0 auto;
 }
 
+.l-news {
+  padding-top: 5.0625rem;
+  padding-bottom: 7rem;
+  background-color: #f5fcf8;
+}
+
+.l-therapy {
+  padding-top: 4.875rem;
+  background-color: #f5fcf8;
+}
+
 .c-section-title {
   font-size: 1.5rem;
   text-align: center;
@@ -300,6 +312,64 @@ select {
   width: 16.4375rem;
 }
 
+.p-news__list {
+  display: flex;
+  flex-direction: column;
+  margin-top: 4.375rem;
+  padding: 3.125rem 4.125rem 2.875rem;
+  background-color: #fff;
+  border-radius: 1.875rem;
+  box-shadow: 0 0.1875rem 0.375rem rgba(0, 0, 0, 0.1607843137);
+}
+
+.p-news__item {
+  display: flex;
+  padding: 1.21875rem 0;
+  border-bottom: 2px solid #e7e7e7;
+}
+
+.p-news__item-time {
+  color: #21a937;
+  font-weight: bold;
+}
+
+.p-news__item-tag {
+  margin-left: 1.25rem;
+  width: 5rem;
+  height: 1.5625rem;
+  line-height: 1.5625rem;
+  text-align: center;
+  background-color: #444444;
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+.p-news__item-text {
+  margin-left: 1.875rem;
+  font-weight: bold;
+}
+
+.p-news__btn-wraper {
+  margin-top: 2.4375rem;
+  text-align: right;
+}
+
+.p-news__link {
+  font-weight: bold;
+  position: relative;
+}
+
+.p-news__link::after {
+  content: "";
+  position: absolute;
+  top: 55%; /* 縦軸をセンタリングする */
+  right: -1.4375rem;
+  transform: translateY(-50%); /* 縦軸をセンタリングする */
+  border: 8px solid transparent;
+  border-left: 10px solid #555; /* 好みで色を変えてください */
+}
+
 .p-pc-nav__tel-wraper {
   text-align: right;
   margin-top: 0.625rem;
@@ -328,6 +398,48 @@ select {
   width: 1.5rem;
 }
 
+.p-therapy__text {
+  text-align: center;
+  margin-top: 4.375rem;
+}
+
+.p-therapy__list {
+  margin-top: 2.125rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.25rem;
+}
+
+.p-therapy__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 23.75rem;
+  padding: 2.5rem 2.375rem 0;
+  border: solid 2px #c9c9c9;
+  border-radius: 0.625rem;
+  background-color: #fff;
+}
+
+.p-therapy__item-title {
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.p-therapy__item-content {
+  font-weight: bold;
+  margin-top: 2.8125rem;
+  line-height: 2.3em;
+  flex: 1 1 auto;
+}
+
+.p-therapy__item-img {
+  text-align: center;
+}
+.p-therapy__item-img img {
+  width: 11.6875rem;
+}
 @media screen and (max-width:821px) {
   html {
     font-size: 16px;
@@ -346,7 +458,6 @@ select {
     background-position: 70%;
   }
 }
-
 @media screen and (max-width:521px) {
   html {
     font-size: 4.2666666667vw;

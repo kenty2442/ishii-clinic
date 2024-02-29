@@ -1,0 +1,58 @@
+@use "Setting" as *;
+
+.p-news__list {
+    display: flex;
+    flex-direction: column;
+    margin-top: rem(70);
+    padding: rem(50) rem(66) rem(46);
+    background-color: #fff;
+    border-radius: rem(30);
+    box-shadow: 0 rem(3) rem(6) #00000029;
+}
+
+.p-news__item {
+    display: flex;
+    padding: rem(19.5) 0;
+    border-bottom: 2px solid #e7e7e7;
+}
+
+.p-news__item-time {
+    color: $text-color;
+    font-weight: bold;
+}
+.p-news__item-tag {
+    margin-left: rem(20);
+    width: rem(80);
+    height: rem(25);
+    line-height: rem(25);
+    text-align: center;
+    background-color: #444444;
+    color: #fff;
+    font-size: rem(12);
+    font-weight: bold;
+}
+
+.p-news__item-text {
+    margin-left: rem(30);
+    font-weight: bold;
+}
+
+.p-news__btn-wraper {
+    margin-top: rem(39);
+    text-align: right;
+}
+
+.p-news__link {
+    font-weight: bold;
+    position: relative;
+}
+
+.p-news__link::after {
+    content: "";
+    position: absolute;
+    top: 55%; /* 縦軸をセンタリングする */
+    right: rem(-23);
+    transform: translateY(-50%); /* 縦軸をセンタリングする */
+    border: 8px solid transparent;
+    border-left: 10px solid #555; /* 好みで色を変えてください */
+}

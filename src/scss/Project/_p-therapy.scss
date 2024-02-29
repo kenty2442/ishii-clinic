@@ -1,0 +1,45 @@
+@use "Setting" as *;
+
+.p-therapy__text {
+    text-align: center;
+    margin-top: rem(70);
+}
+
+.p-therapy__list {
+    margin-top: rem(34);
+    display: flex;
+    justify-content: center;
+    gap: rem(20);
+}
+
+.p-therapy__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: rem(380);
+    padding: rem(40) rem(38) 0;
+    border: solid 2px #c9c9c9;
+    border-radius: rem(10);
+    background-color: #fff;
+}
+
+.p-therapy__item-title {
+    font-size: rem(24);
+    text-align: center;
+    font-weight: bold;
+}
+
+.p-therapy__item-content {
+    font-weight: bold;
+    margin-top: rem(45);
+    line-height: 2.3em;
+    flex: 1 1 auto;
+}
+
+.p-therapy__item-img {
+    text-align: center;
+
+    img {
+        width: rem(187);
+    }
+}
