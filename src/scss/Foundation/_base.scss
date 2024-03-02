@@ -4,6 +4,7 @@ html {
     font-family: "Noto Sans JP", sans-serif;
     scroll-behavior: smooth;
     font-size: 16px;
+    color: $base-color;
 
     //スマホ
     @include mq(md) {
