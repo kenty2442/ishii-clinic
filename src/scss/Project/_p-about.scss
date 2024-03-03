@@ -1,16 +1,47 @@
 @use "Setting" as *;
 
+.p-about {
+    @include mq(lg) {
+        text-align: center;
+    }
+}
+
 .p-about__container {
     display: flex;
     justify-content: space-between;
+    max-width: rem(1180);
+    margin: 0 auto;
+
+    @include mq(lg) {
+        flex-direction: column-reverse;
+    }
 }
 
 .p-about__content {
-    margin-left: rem(31);
+    margin-left: rem(20);
     margin-top: rem(30);
+
+    @include mq(lg) {
+        margin-left: 0;
+    }
 }
 
 .p-about__text {
     margin-top: rem(37);
-    line-height: 2.375em;
+    line-height: 3.2em;
+
+    @include mq(lg) {
+        line-height: 1.8em;
+    }
+}
+
+.p-about__img-content {
+    margin-left: rem(44);
+    width: 58%;
+
+    @include mq(lg) {
+        margin: 0 auto;
+        width: 100%;
+        padding: 0 rem(20);
+    }
 }

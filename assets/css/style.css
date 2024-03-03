@@ -11,7 +11,7 @@ img {
   height: auto;
 }
 
-.sp-br {
+.sp-only {
   display: none;
 }
 
@@ -219,8 +219,9 @@ select {
 }
 
 .l-inner {
-  max-width: 73.75rem;
+  max-width: 71.25rem;
   margin: 0 auto;
+  padding: 0 1.25rem;
 }
 
 .l-news {
@@ -256,16 +257,23 @@ select {
 .p-about__container {
   display: flex;
   justify-content: space-between;
+  max-width: 73.75rem;
+  margin: 0 auto;
 }
 
 .p-about__content {
-  margin-left: 1.9375rem;
+  margin-left: 1.25rem;
   margin-top: 1.875rem;
 }
 
 .p-about__text {
   margin-top: 2.3125rem;
-  line-height: 2.375em;
+  line-height: 3.2em;
+}
+
+.p-about__img-content {
+  margin-left: 2.75rem;
+  width: 58%;
 }
 
 .p-access__wraper {
@@ -275,6 +283,18 @@ select {
 
 .p-access__map {
   width: 51.5%;
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+
+.p-access__map iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .p-access__info {
@@ -292,18 +312,21 @@ select {
 
 .p-access__info-tel {
   margin-top: 1.5625rem;
+  margin-left: 1.75rem;
   font-size: 1.5rem;
   color: #21a937;
   font-weight: bold;
-  position: relative;
-  padding-left: 1.625rem;
 }
 
-.p-access__info-tel::before {
+.p-access__info-tel a {
+  position: relative;
+}
+
+.p-access__info-tel a::before {
   content: url("/assets/img/telphone.svg");
   position: absolute;
-  top: 0.125rem;
-  left: 0;
+  top: 0.4375rem;
+  left: -1.875rem;
 }
 
 .p-access__info-hours {
@@ -421,8 +444,7 @@ select {
   max-width: 68.75rem;
   margin-inline: auto;
 }
-
-.p-header__logo {
+.p-header__logo img {
   width: 16.4375rem;
 }
 
@@ -449,7 +471,7 @@ select {
 
 .p-news__item-tag {
   margin-left: 1.25rem;
-  width: 5rem;
+  min-width: 5rem;
   height: 1.5625rem;
   line-height: 1.5625rem;
   text-align: center;
@@ -528,7 +550,7 @@ select {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  max-width: 23.75rem;
+  width: 23.75rem;
   padding: 2.5rem 2.375rem 0;
   border: solid 2px #e7e7e7;
   border-radius: 0.625rem;
@@ -555,26 +577,52 @@ select {
   width: 11.6875rem;
 }
 @media screen and (max-width:821px) {
-  html {
-    font-size: 16px;
-  }
-  .pc-br {
+  .pc-only {
     display: none;
   }
-  .sp-br {
+  .sp-only {
     display: block;
+  }
+  .l-about {
+    padding-top: 5rem;
+    padding-bottom: 1.875rem;
+  }
+  .l-access {
+    padding-top: 1.875rem;
+    padding-bottom: 1.875rem;
+  }
+  .l-news {
+    padding-top: 1.875rem;
+    padding-bottom: 1.875rem;
+  }
+  .l-therapy {
+    padding-top: 1.875rem;
+  }
+  .p-access__wraper {
+    flex-direction: column;
+  }
+  .p-access__map {
+    width: 100%;
+    padding-bottom: 80%;
+  }
+  .p-access__info {
+    width: 100%;
+    text-align: center;
+  }
+  .p-access__info-logo {
+    width: 12.5rem;
+    margin: 1.5625rem auto 1.5625rem;
+  }
+  .p-access__info-postcode {
+    display: block;
+  }
+  .p-access__info-address {
+    display: block;
+    margin-top: 0.625rem;
   }
   .p-copy-boxes {
     margin-left: 8%;
     gap: 1.25rem;
-  }
-  .p-fv {
-    background-position: 70%;
-  }
-}
-@media screen and (max-width:521px) {
-  html {
-    font-size: 4.2666666667vw;
   }
   .p-copy-boxes {
     margin-top: 3.75rem;
@@ -587,7 +635,110 @@ select {
     font-size: 1.25rem;
   }
   .p-fv {
+    background-position: 70%;
+  }
+  .p-fv {
     height: 37.5rem;
+  }
+  .p-header {
+    flex-direction: column;
+  }
+  .p-header__logo {
+    text-align: center;
+  }
+  .p-header__logo img {
+    width: 12.5rem;
+  }
+  .p-news__item {
+    flex-wrap: wrap;
+  }
+  .p-news__item-text {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 1.25rem;
+  }
+  .p-pc-nav {
+    text-align: center;
+  }
+  .p-pc-nav__tel-wraper {
+    text-align: center;
+  }
+  .p-pc-nav__info {
+    line-height: 1.4em;
+    margin-top: 1.25rem;
+  }
+  .p-pc-nav__tel {
+    margin-left: 1.25rem;
+  }
+  .p-therapy__text {
+    line-height: 2.3em;
+    margin-top: 1.875rem;
+  }
+  .p-therapy__list {
+    flex-direction: column;
+  }
+  .p-therapy__item {
+    width: 100%;
+  }
+  .p-therapy__item-img {
+    margin-top: 3.75rem;
+  }
+}
+@media screen and (max-width:1024px) {
+  .c-section-title__left {
+    text-align: center;
+    margin-top: 1.25rem;
+  }
+  .p-about {
+    text-align: center;
+  }
+  .p-about__container {
+    flex-direction: column-reverse;
+  }
+  .p-about__content {
+    margin-left: 0;
+  }
+  .p-about__text {
+    line-height: 1.8em;
+  }
+  .p-about__img-content {
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 1.25rem;
+  }
+  .p-access__info-hours {
+    flex-direction: column;
+  }
+  .p-accrss__info-hours-title {
+    width: 4rem;
+    border-bottom: 2px solid #e7e7e7;
+    padding: 0 0.1875rem 0.3125rem;
+    margin: 1.1875rem auto 0;
+    text-align: center;
+    height: 1.25rem;
+  }
+  .p-access__info-hours-container {
+    width: 100%;
+    border: none;
+    text-align: center;
+    padding-left: 0;
+    margin-left: 0;
+  }
+  .p-access__info-hours-container--therd {
+    margin-bottom: 0.625rem;
+  }
+  .p-access__info-hours-container--last {
+    margin: 0 auto 0.9375rem;
+  }
+  .p-therapy__item-title {
+    font-size: 1.125rem;
+  }
+  .p-therapy__item-content {
+    margin-top: 1.5rem;
+    line-height: 1.8em;
+  }
+  .p-therapy__item-img img {
+    width: 8.125rem;
   }
 }
 /*# sourceMappingURL=maps/style.css.map */

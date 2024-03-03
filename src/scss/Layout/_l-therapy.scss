@@ -3,4 +3,8 @@
 .l-therapy {
     padding-top: rem(78);
     background-color: $background-color;
+
+    @include mq(md) {
+        padding-top: rem(30);
+    }
 }

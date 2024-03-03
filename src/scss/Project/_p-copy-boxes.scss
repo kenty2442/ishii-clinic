@@ -13,7 +13,7 @@
         gap: rem(20);
     }
 
-    @include mq(sm) {
+    @include mq(md) {
         margin-top: rem(60);
     }
 }
@@ -24,7 +24,7 @@
     background-color: #fff;
     padding: rem(24) 0;
 
-    @include mq(sm) {
+    @include mq(md) {
         width: rem(50);
         height: auto;
     }
@@ -39,7 +39,7 @@
     letter-spacing: 0.2em;
     margin: 0 auto;
 
-    @include mq(sm) {
+    @include mq(md) {
         font-size: rem(20);
     }
 

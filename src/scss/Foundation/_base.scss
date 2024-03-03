@@ -6,15 +6,16 @@ html {
     font-size: 16px;
     color: $base-color;
 
-    //スマホ
-    @include mq(md) {
-        font-size: 16px;
-    }
+    //     //スマホ
+    //     @include mq(md) {
+    //         font-size: 16px;
+    //     }
 
-    //~375px以下
-    @include mq(sm) {
-        font-size: calc((16 / 375) * 100vw);
-    }
+    //     //~375px以下
+    //     @include mq(sm) {
+    //         font-size: calc((16 / 375) * 100vw);
+    //     }
+    // }
 }
 
 img {
@@ -22,13 +23,13 @@ img {
     height: auto;
 }
 
-.pc-br {
+.pc-only {
     @include mq(md) {
         display: none;
     }
 }
 
-.sp-br {
+.sp-only {
     display: none;
     @include mq(md) {
         display: block;

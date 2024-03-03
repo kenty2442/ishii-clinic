@@ -3,4 +3,9 @@
 .l-access {
     padding-top: rem(196);
     padding-bottom: rem(163);
+
+    @include mq(md) {
+        padding-top: rem(30);
+        padding-bottom: rem(30);
+    }
 }

@@ -6,8 +6,22 @@
     padding: rem(29);
     max-width: rem(1100);
     margin-inline: auto;
+
+    @include mq(md) {
+        flex-direction: column;
+    }
 }
 
 .p-header__logo {
-    width: rem(263);
+    @include mq(md) {
+        text-align: center;
+    }
+
+    img {
+        width: rem(263);
+
+        @include mq(md) {
+            width: rem(200);
+        }
+    }
 }

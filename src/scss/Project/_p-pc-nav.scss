@@ -1,12 +1,27 @@
 @use "Setting" as *;
 
+.p-pc-nav {
+    @include mq(md) {
+        text-align: center;
+    }
+}
+
 .p-pc-nav__tel-wraper {
     text-align: right;
     margin-top: rem(10);
+
+    @include mq(md) {
+        text-align: center;
+    }
 }
 
 .p-pc-nav__info {
     font-size: rem(14);
+
+    @include mq(md) {
+        line-height: 1.4em;
+        margin-top: rem(20);
+    }
 }
 
 .p-pc-nav__tel {
@@ -14,6 +29,10 @@
     font-size: rem(24);
     font-weight: bold;
     color: $text-color;
+
+    @include mq(md) {
+        margin-left: rem(20);
+    }
 }
 .p-pc-nav__tel::after {
     content: "";

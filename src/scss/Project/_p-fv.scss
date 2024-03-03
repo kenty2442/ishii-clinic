@@ -11,7 +11,7 @@
         background-position: 70%;
     }
 
-    @include mq(sm) {
+    @include mq(md) {
         height: rem(600);
     }
 }

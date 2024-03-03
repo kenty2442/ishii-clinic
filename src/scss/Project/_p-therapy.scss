@@ -3,6 +3,11 @@
 .p-therapy__text {
     text-align: center;
     margin-top: rem(70);
+
+    @include mq(md) {
+        line-height: 2.3em;
+        margin-top: rem(30);
+    }
 }
 
 .p-therapy__list {
@@ -10,23 +15,35 @@
     display: flex;
     justify-content: center;
     gap: rem(20);
+
+    @include mq(md) {
+        flex-direction: column;
+    }
 }
 
 .p-therapy__item {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    max-width: rem(380);
+    width: rem(380);
     padding: rem(40) rem(38) 0;
     border: solid 2px $border-color;
     border-radius: rem(10);
     background-color: #fff;
+
+    @include mq(md) {
+        width: 100%;
+    }
 }
 
 .p-therapy__item-title {
     font-size: rem(24);
     text-align: center;
     font-weight: bold;
+
+    @include mq(lg) {
+        font-size: rem(18);
+    }
 }
 
 .p-therapy__item-content {
@@ -34,12 +51,25 @@
     margin-top: rem(45);
     line-height: 2.3em;
     flex: 1 1 auto;
+
+    @include mq(lg) {
+        margin-top: rem(24);
+        line-height: 1.8em;
+    }
 }
 
 .p-therapy__item-img {
     text-align: center;
 
+    @include mq(md) {
+        margin-top: rem(60);
+    }
+
     img {
         width: rem(187);
+
+        @include mq(lg) {
+            width: rem(130);
+        }
     }
 }

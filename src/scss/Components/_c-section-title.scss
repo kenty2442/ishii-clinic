@@ -7,6 +7,11 @@
 
 .c-section-title__left {
     text-align: left;
+
+    @include mq(lg) {
+        text-align: center;
+        margin-top: rem(20);
+    }
 }
 
 .c-section-title span {
