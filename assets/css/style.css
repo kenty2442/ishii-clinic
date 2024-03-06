@@ -215,7 +215,6 @@ select {
 
 .l-access {
   padding-top: 12.25rem;
-  padding-bottom: 10.1875rem;
 }
 
 .l-inner {
@@ -323,7 +322,7 @@ select {
 }
 
 .p-access__info-tel a::before {
-  content: url("/assets/img/telphone.svg");
+  content: url("../img/telphone.svg");
   position: absolute;
   top: 0.4375rem;
   left: -1.875rem;
@@ -431,7 +430,7 @@ select {
 
 .p-fv {
   height: 59.1875rem;
-  background-image: url("/assets/img/fv.png");
+  background-image: url("../img/fv.png");
   background-size: cover;
   background-position: center;
   position: relative;
@@ -467,6 +466,7 @@ select {
 .p-news__item-time {
   color: #21a937;
   font-weight: bold;
+  line-height: 1.5625rem;
 }
 
 .p-news__item-tag {
@@ -528,7 +528,7 @@ select {
   top: 0.3125rem;
   left: -1.875rem;
   display: block;
-  background-image: url("/assets/img/telphone.svg");
+  background-image: url("../img/telphone.svg");
   background-size: cver;
   height: 1.5rem;
   width: 1.5rem;
@@ -694,17 +694,18 @@ select {
   }
   .p-about__container {
     flex-direction: column-reverse;
+    padding: 0 1.25rem 0;
   }
   .p-about__content {
     margin-left: 0;
   }
   .p-about__text {
     line-height: 1.8em;
+    text-align: left;
   }
   .p-about__img-content {
     margin: 0 auto;
     width: 100%;
-    padding: 0 1.25rem;
   }
   .p-access__info-hours {
     flex-direction: column;
